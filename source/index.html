@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
+  <title>Велосипеды MooN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="format-detection" content="telephone=no">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/OpenSansBold.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSansLight.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSansRegular.woff2" as="font">
 </head>
+
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="68" height="21" alt="Логотип">
+        </a>
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#aboutUs" class="site-list__item-link">О нас</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#bicycles" class="site-list__item-link">Виды велосипедов</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#video" class="site-list__item-link">Видео про велосипеды</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#contacts" class="site-list__item-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="promo">
+      <h1>Мы продаем велосипеды</h1>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </section>
+    <article class="select">
+      <h3 class="visually-hidden">Подобрать велосипед мечты</h3>
+      <form class="select__form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="select__group">
+          <legend class="select__legend visually-hidden">Данные для подбора</legend>
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <!-- ??? Не знаю - оставить в виде списка или убрать его -->
+          <ul class="select__list">
+            <li class="select__item">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+            </li>
+            <li class="select__item">
+              <label for="email"></label>
+              <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
+            </li>
+          </ul>
+        </fieldset>
+        <button class="btn select__button" type="submit">Подобрать велосипед мечты</button>
+      </form>
+    </article>
+
+  </header>
+
+  <main>
+
+  </main>
+
+
+  <footer>
+
+  </footer>
+
 </body>
+
 </html>
