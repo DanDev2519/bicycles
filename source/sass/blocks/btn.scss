@@ -1,23 +1,25 @@
-// .btn {
-//   display: block;
-//   padding: 30px 40px;
+.btn {
+  display: block;
+  padding: 2px 48px;
 
-//   @include setFont(12px, $white, 15px, bold);
-//   text-align: center;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   letter-spacing: 2px;
+  @include setFont(15px, 21px, 600);
+  font-family: inherit;
+  color: $black;
+  text-align: center;
+  text-decoration: none;
 
-//   background-color: $light-red;
-//   border: 0;
-//   cursor: pointer;
+  background-color: $turquoise;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
 
-//   &:hover,
-//   &:focus {
-//     background-color: $orange;
-//   }
+  &:hover,
+  &:focus {
+    background-color: $turquoise-darker;
+  }
 
-//   &:active {
-//     background-color: $orange;
-//   }
-// }
+  &:active {
+    background-color: $turquoise-darker;
+    opacity: 0.8;
+  }
+}

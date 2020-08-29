@@ -1,0 +1,11 @@
+.promo {
+  h1 {
+    @include setFont(46px, 64px, bold);
+  }
+
+  p {
+    @include setFont(20px, 32px, 300);
+    color: $white-limpid8;
+  }
+}
+

@@ -16,9 +16,9 @@
 
 <body>
 
-  <header class="page-header">
+  <header class="page-header theme-dark">
     <nav class="main-nav main-nav--closed main-nav--nojs container">
-      <div class="page-header__wrapper">
+      <div class="main-nav__wrapeer">
         <a class="page-header__logo">
           <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" width="68" height="21" alt="Логотип">
         </a>
@@ -26,46 +26,48 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#aboutUs" class="site-list__item-link">О нас</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#aboutUs" class="main-nav__item-link">О нас</a>
         </li>
-        <li class="site-list__item">
-          <a href="#bicycles" class="site-list__item-link">Виды велосипедов</a>
+        <li class="main-nav__item">
+          <a href="#bicycles" class="main-nav__item-link">Виды велосипедов</a>
         </li>
-        <li class="site-list__item">
-          <a href="#video" class="site-list__item-link">Видео про велосипеды</a>
+        <li class="main-nav__item">
+          <a href="#video" class="main-nav__item-link">Видео про велосипеды</a>
         </li>
-        <li class="site-list__item">
-          <a href="#contacts" class="site-list__item-link">Контакты</a>
+        <li class="main-nav__item">
+          <a href="#contacts" class="main-nav__item-link">Контакты</a>
         </li>
       </ul>
     </nav>
-    <section class="promo">
-      <h1>Мы продаем велосипеды</h1>
-      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-    </section>
-    <article class="select">
-      <h3 class="visually-hidden">Подобрать велосипед мечты</h3>
-      <form class="select__form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="select__group">
-          <legend class="select__legend visually-hidden">Данные для подбора</legend>
-          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <!-- ??? Не знаю - оставить в виде списка или убрать его -->
-          <ul class="select__list">
-            <li class="select__item">
-              <label for="name"></label>
-              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
-            </li>
-            <li class="select__item">
-              <label for="tel"></label>
-              <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
-            </li>
-          </ul>
-        </fieldset>
-        <button class="btn select__button" type="submit">Подобрать велосипед мечты</button>
-      </form>
-    </article>
+    <div class="page-header__wrapper">
+      <section class="promo">
+        <h1>Мы продаем велосипеды</h1>
+        <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </section>
+      <article class="select">
+        <h3 class="visually-hidden">Подобрать велосипед мечты</h3>
+        <form class="select__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="select__group">
+            <legend class="visually-hidden">Данные для подбора</legend>
+            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+            <!-- ??? Не знаю - оставить в виде списка или убрать его -->
+            <ul class="select__list">
+              <li class="select__item">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
+              </li>
+              <li class="select__item">
+                <label for="tel"></label>
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="btn select__button" type="submit">Подобрать велосипед мечты</button>
+        </form>
+      </article>
+    </div>
 
   </header>
 

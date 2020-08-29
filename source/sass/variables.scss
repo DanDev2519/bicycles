@@ -1,6 +1,17 @@
 //Цвета
 $white: white;
+$white-limpid7: rgba(255, 255, 255, 0.7);
+$white-limpid8: rgba(255, 255, 255, 0.8);
+$white-limpid2: rgba(255, 255, 255, 0.2);
 $black: black;
+$black1: #131314;
+$black2: #1f1f1f;
+$black3: #1c1c1c;
+$black-limpid7: rgba(0, 0, 0, 0.7);
+$black3-limpid5: rgba(28, 28, 28, 0.5);
+$light-gray: #c9ccd4;
+$turquoise: #0ad9c6;
+$turquoise-darker: #30b4a8;
 
 // Размеры
 $mobile-width: 320px;
@@ -8,7 +19,7 @@ $mobile-width-only: 767px;
 $tablet-width: 768px;
 $tablet-width-only: 1023px;
 $desktop-width: 1024px;
-$desktop-width-max: 1170px;
+$desktop-width-max: 1440px;
 
 //Медиа выражения
 $mobile: "(min-width: #{$mobile-width})";
