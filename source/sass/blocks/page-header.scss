@@ -1,11 +1,24 @@
 .page-header {
+  min-height: 825px;
 
+  @include bgimg(
+    $black1,
+    url("../img/Img Bike-desktop@2x.jpg"),
+    $position: center 0
+  );
+  background-size: cover;
+
+  @media #{$retina} {
+    background-image: url("../img/Img Bike-desktop@2x.jpg");
+  }
 }
 
 .page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+
   margin: 0 auto;
   padding: 0;
-  // min-width: 720px;
   max-width: 880px;
 }
 
@@ -17,4 +30,32 @@
 
     @include size(68px, 21px);
   }
+}
+
+@media #{$tablet-only} {
+  .page-header {
+    min-height: 340px;
+    background-image: url("../img/Img Bike-tablet@1x.jpg");
+
+    @media #{$retina} {
+      background-image: url("../img/Img Bike-tablet@2x.jpg");
+    }
+  }
+
+  // .page-header__wrapper {
+  //   display: flex;
+  //   justify-content: space-between;
+
+  //   margin: 0 auto;
+  //   padding: 0;
+  //   max-width: 880px;
+  // }
+
+  .page-header__logo {
+    padding: 25px 22px;
+  }
+}
+
+@media #{$mobile-only} {
+
 }

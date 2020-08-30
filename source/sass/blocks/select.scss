@@ -1,10 +1,12 @@
 .select {
-
+  margin-top: -17px;
+  width: 327px;
 }
 
 .select__form {
   p {
     @include setFont(17px, 28px, 600);
+    letter-spacing: -0.005em;
     color: $white;
     text-align: center;
   }
@@ -14,6 +16,10 @@
   margin: 0;
   padding: 0;
   border: none;
+
+  p {
+    margin: 0;
+  }
 }
 
 .select__list {
@@ -26,6 +32,9 @@
 
   input {
     display: block;
+    margin: 20px 0;
+    padding: 12px 30px 10px;
+    width: 100%;
 
     @include setFont(15px, 24px, normal);
     font-family: inherit;
@@ -39,4 +48,17 @@
       opacity: 0.5;
     }
   }
+}
+
+.select__button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media #{$tablet-only} {
+
+}
+
+@media #{$mobile-only} {
+
 }
