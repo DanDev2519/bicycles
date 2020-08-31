@@ -21,8 +21,21 @@
 
 @media #{$tablet-only} {
   .promo {
-    padding: 86px 0 30px;
-    width: 68.36%;
+    width: 100%;
+    min-height: 340px;
+    margin: -50px 0 0;
+    padding: 135px 15.82% 10px;
+
+    @include bgimg(
+      $black1,
+      url("../img/Img Bike-desktop@2x.jpg"),
+      $position: center 0
+    );
+    background-size: cover;
+
+    @media #{$retina} {
+      background-image: url("../img/Img Bike-desktop@2x.jpg");
+    }
 
     h1 {
       padding-bottom: 17px;
@@ -40,5 +53,22 @@
 }
 
 @media #{$mobile-only} {
+  .promo {
+    min-height: 390px;
+    padding: 120px 5% 10px;
 
+    @include bgimg($black1, url("../img/Img Bike-mobile@2x.jpg"));
+
+    @media #{$retina} {
+      background-image: url("../img/Img Bike-mobile@2x.jpg");
+    }
+
+    h1 {
+      padding-bottom: 20px;
+    }
+
+    p {
+      padding: 0;
+    }
+  }
 }

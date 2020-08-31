@@ -57,8 +57,8 @@
 
 @media #{$tablet-only} {
   .select {
-    margin: 0;
-    padding: 120px 0 20px;
+    margin: 0 auto;
+    padding: 70px 0 20px;
     width: 41.8%;
   }
 
@@ -79,5 +79,20 @@
 }
 
 @media #{$mobile-only} {
+  .select {
+    // padding: 70px 0 20px;
+    width: 90%;
+  }
 
+  .select__form {
+    p {
+      padding-bottom: 0;
+    }
+  }
+
+  .select__item {
+    input {
+      padding: 12px 26px 10px;
+    }
+  }
 }

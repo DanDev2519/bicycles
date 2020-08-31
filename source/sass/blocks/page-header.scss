@@ -35,23 +35,11 @@
 @media #{$tablet-only} {
   .page-header {
     min-height: auto;
-    background-image: url("../img/Img Bike-tablet@1x.jpg"),
-      linear-gradient($black1 340px, $white 340px);
-
-    @media #{$retina} {
-      background-image: url("../img/Img Bike-tablet@2x.jpg");
-    }
-    //_ Может существует более красивое решение?
-    // Мне не нравится растягивание изображения и фиксированная высота в 340px
-    // background-size: 768px 340px, 100%;
-    background-size: 100% 340px, 100%;
+    background-image: linear-gradient($black1 340px, $white 340px);
   }
 
   .page-header__wrapper {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
+    display: block;
     max-width: none;
   }
 
@@ -61,5 +49,11 @@
 }
 
 @media #{$mobile-only} {
+  .page-header {
+    background-image: linear-gradient($black1 319px, $white 319px);
+  }
 
+  .page-header__logo {
+    padding: 25px 16px 4px;
+  }
 }
