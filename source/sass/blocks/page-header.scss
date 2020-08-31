@@ -34,25 +34,29 @@
 
 @media #{$tablet-only} {
   .page-header {
-    min-height: 340px;
-    background-image: url("../img/Img Bike-tablet@1x.jpg");
+    min-height: auto;
+    background-image: url("../img/Img Bike-tablet@1x.jpg"),
+      linear-gradient($black1 340px, $white 340px);
 
     @media #{$retina} {
       background-image: url("../img/Img Bike-tablet@2x.jpg");
     }
+    //_ Может существует более красивое решение?
+    // Мне не нравится растягивание изображения и фиксированная высота в 340px
+    // background-size: 768px 340px, 100%;
+    background-size: 100% 340px, 100%;
   }
 
-  // .page-header__wrapper {
-  //   display: flex;
-  //   justify-content: space-between;
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
-  //   margin: 0 auto;
-  //   padding: 0;
-  //   max-width: 880px;
-  // }
+    max-width: none;
+  }
 
   .page-header__logo {
-    padding: 25px 22px;
+    padding: 25px 22px 4px;
   }
 }
 

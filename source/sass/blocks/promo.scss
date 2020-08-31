@@ -20,7 +20,23 @@
 }
 
 @media #{$tablet-only} {
+  .promo {
+    padding: 86px 0 30px;
+    width: 68.36%;
 
+    h1 {
+      padding-bottom: 17px;
+
+      @include setFont(30px, 42px, bold);
+      text-align: center;
+    }
+
+    p {
+      @include setFont(18px, 32px, 300);
+      text-align: center;
+      padding: 0 8.57%;
+    }
+  }
 }
 
 @media #{$mobile-only} {

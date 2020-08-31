@@ -56,7 +56,26 @@
 }
 
 @media #{$tablet-only} {
+  .select {
+    margin: 0;
+    padding: 120px 0 20px;
+    width: 41.8%;
+  }
 
+  .select__form {
+    p {
+      padding-bottom: 10px;
+
+      @include setFont(18px, 28px, 600);
+      color: $black;
+    }
+  }
+
+  .select__item {
+    input {
+      padding: 12px 20px 10px;
+    }
+  }
 }
 
 @media #{$mobile-only} {
