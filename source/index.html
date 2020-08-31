@@ -15,6 +15,9 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
 
   <header class="page-header theme-dark">
     <!-- <nav class="main-nav main-nav--opened main-nav--nojs container"> -->
@@ -61,7 +64,8 @@
               </li>
               <li class="select__item">
                 <label for="tel"></label>
-                <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
+                <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона"
+                  required="">
               </li>
             </ul>
           </fieldset>
@@ -76,9 +80,34 @@
 
   </main>
 
-
-  <footer>
-
+  <footer class="page-footer theme-light">
+    <h2>Как нас найти?</h2>
+    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <picture>
+      <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/Rectangle-6-mobile@1x.webp 1x, img/Rectangle-6-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1023px)"
+        srcset="img/Rectangle-6-tablet@1x.webp 1x, img/Rectangle-6-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/Rectangle-6-desktop@1x.webp 1x, img/Rectangle-6-desktop@2x.webp 2x">
+      <source media="(max-width: 767px)" srcset="img/Rectangle-6-mobile@1x.png 1x, img/Rectangle-6-mobile@2x.png 2x">
+      <source media="(max-width: 1023px)" srcset="img/Rectangle-6-tablet@1x.png 1x, img/Rectangle-6-tablet@2x.png 2x">
+      <img src="img/Rectangle-6-desktop@1x.png" srcset="img/Rectangle-6-desktop@2x.png 2x"
+        width="957" height="530" alt="Карта">
+    </picture>
+      <ul class="page-footer__social">
+        <li>
+          <svg role="img" width="26" height="20" fill="none">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <a class="page-footer__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+        </li>
+        <li>
+          <svg role="img" width="22" height="24">
+            <use xlink:href="#icon-email"></use>
+          </svg>
+          <a class="page-footer__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </li>
+      </ul>
   </footer>
 
 </body>
