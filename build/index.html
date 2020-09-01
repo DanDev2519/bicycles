@@ -79,9 +79,9 @@
 
   </main>
 
-  <footer class="page-footer theme-light">
+  <footer class="page-footer theme-light" id="contacts">
     <h2>Как нас найти?</h2>
-    <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+    <p>Мы находимся по адресу: Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19</p>
     <picture>
       <source type="image/webp" media="(max-width: 767px)" srcset="img/Rectangle-6-mobile@1x.webp 1x, img/Rectangle-6-mobile@2x.webp 2x">
       <source type="image/webp" media="(max-width: 1023px)" srcset="img/Rectangle-6-tablet@1x.webp 1x, img/Rectangle-6-tablet@2x.webp 2x">
@@ -90,20 +90,24 @@
       <source media="(max-width: 1023px)" srcset="img/Rectangle-6-tablet@1x.png 1x, img/Rectangle-6-tablet@2x.png 2x">
       <img src="img/Rectangle-6-desktop@1x.png" srcset="img/Rectangle-6-desktop@2x.png 2x" width="957" height="530" alt="Карта">
     </picture>
-      <ul class="page-footer__social">
-        <li>
-          <svg role="img" width="26" height="20" fill="none">
-            <use xlink:href="#icon-phone"></use>
-          </svg>
-          <a class="page-footer__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-        </li>
-        <li>
-          <svg role="img" width="22" height="24">
+    <ul class="page-footer__social">
+      <li>
+        <a class="page-footer__link page-footer__link--email" href="mailto:puteshestviemechta@gmail.ru">
+          <svg role="img" width="26" height="20">
             <use xlink:href="#icon-email"></use>
           </svg>
-          <a class="page-footer__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
-        </li>
-      </ul>
+          <span>puteshestviemechta@gmail.ru</span>
+        </a>
+      </li>
+      <li>
+        <a class="page-footer__link page-footer__link--phone" href="tel:+749978468446">
+          <svg role="img" width="22" height="24">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <span>+7 (499) -784-684-46</span>
+        </a>
+      </li>
+    </ul>
   </footer>
 
 </body>
