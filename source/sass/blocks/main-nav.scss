@@ -74,11 +74,9 @@
   }
 
   // исправляет bug в хроме - placeholder светится сквозь слой выпадающего меню
-  .main-nav--opened:not(.main-nav--nojs) ~ * *::placeholder {
-    color: transparent;
-  }
-
-
+  // .main-nav--opened:not(.main-nav--nojs) ~ * *::placeholder {
+  //   color: transparent;
+  // }
 
   .main-nav__wrapeer {
     order: 1;
