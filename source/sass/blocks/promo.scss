@@ -28,13 +28,13 @@
 
     @include bgimg(
       $black1,
-      url("../img/Img Bike-desktop@2x.jpg"),
+      url("../img/Img-Bike-desktop@2x.jpg"),
       $position: center 0
     );
     background-size: cover;
 
     @media #{$retina} {
-      background-image: url("../img/Img Bike-desktop@2x.jpg");
+      background-image: url("../img/Img-Bike-desktop@2x.jpg");
     }
 
     h1 {
@@ -57,10 +57,10 @@
     min-height: 390px;
     padding: 120px 5% 10px;
 
-    @include bgimg($black1, url("../img/Img Bike-mobile@2x.jpg"));
+    @include bgimg($black1, url("../img/Img-Bike-mobile@2x.jpg"));
 
     @media #{$retina} {
-      background-image: url("../img/Img Bike-mobile@2x.jpg");
+      background-image: url("../img/Img-Bike-mobile@2x.jpg");
     }
 
     h1 {

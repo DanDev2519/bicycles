@@ -66,11 +66,19 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
 
     &.main-nav--nojs {
       position: static;
     }
   }
+
+  // исправляет bug в хроме - placeholder светится сквозь слой выпадающего меню
+  .main-nav--opened:not(.main-nav--nojs) ~ * *::placeholder {
+    color: transparent;
+  }
+
+
 
   .main-nav__wrapeer {
     order: 1;
