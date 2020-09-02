@@ -1,0 +1,106 @@
+.bicycles-types {
+  padding: 152px 4% 150px;
+
+  background-color: $fog;
+
+  h2 {
+    margin: 0 12px 0 0;
+    padding-bottom: 10px;
+
+    @include setFont(30px, 30px, 600);
+    letter-spacing: -0.005em;
+    text-align: center;
+  }
+}
+
+.bicycles-types__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include list(0);
+  margin: 0 -25px 0 1px;
+}
+
+.bicycles-types__item {
+  position: relative;
+  margin: 0 25px;
+  padding-top: 40px;
+
+  &::before,
+  &::after {
+    @include pseudo();
+  }
+
+  &--1 {
+    margin-top: 10px;
+
+    &::before {
+      top: 195px;
+      left: -60px;
+
+      @include size(180px, 180px);
+      border: 27px solid $turquoise;
+      border-radius: 50%;
+    }
+  }
+
+  &--2 {
+    margin-top: 38px;
+
+    &::before,
+    &::after {
+      @include size(47px, 47px);
+      border: 8px solid $turquoise;
+      z-index: 1;
+    }
+
+    &::before {
+      top: 22px;
+      left: -20px;
+    }
+
+    &::after {
+      bottom: 30px;
+      right: -22px;
+    }
+  }
+
+  &--3 {
+    &::before {
+      top: 7px;
+      right: -35px;
+
+      @include size(95px, 95px);
+      border: 17px solid $turquoise;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  figcaption {
+    padding-top: 20px;
+
+    @include setFont(22px, 34px, 600);
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
+}
+
+@media #{$tablet-only} {
+
+}
+
+@media #{$mobile-only} {
+
+}
