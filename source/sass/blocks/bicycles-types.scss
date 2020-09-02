@@ -167,54 +167,21 @@
 @media #{$mobile-only} {
   .bicycles-types {
     padding: 50px 7% 40px;
-
-    h2 {
-      // margin: 0;
-      // padding-bottom: 0;
-      // @include setFont(24px, 41px, 600);
-    }
-  }
-
-  .bicycles-types__list {
-    // margin: 0 -25px;
   }
 
   .bicycles-types__item {
     padding: 20px 0 20px 0;
 
     &--1 {
-      // margin-top: 0;
-
       &::before {
-        // top: 220px;
         left: -25px;
-
-        // @include size(127px, 127px);
-        // border: 18px solid $turquoise;
-      }
-    }
-
-    &--2 {
-      // margin-top: 0;
-
-      &::before,
-      &::after {
-        // display: none;
       }
     }
 
     &--3 {
       &::before {
-        // top: 0;
         right: -15px;
-
-        // @include size(68px, 68px);
-        // border: 13px solid $turquoise;
       }
-    }
-
-    img {
-      // @include size(270px, 300px);
     }
   }
 }
