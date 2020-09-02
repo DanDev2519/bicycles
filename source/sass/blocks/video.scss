@@ -1,4 +1,5 @@
 .video {
+  margin: 0 auto;
   padding: 120px 0 0;
   background-image: linear-gradient($black1 87.81%, $white 87.81%);
 
@@ -44,6 +45,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &:focus {
+      outline: 2px solid $white;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -83,6 +92,7 @@
     background-image: linear-gradient($black1 88.63%, $white 88.63%);
 
     h2 {
+      padding: 0 10px 20px 0;
       max-width: 290px;
     }
 

@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Велосипеды MooN</title>
+  <meta name="keywords" content="велосипед, спорт, отдых, детский велосипед, магазин, аксессуары для велосипедов, Санкт-Петербург">
+  <meta name="description" content="Продажа самых лучших велосипедов в Санкт-Петербурге и доставка по России. Наши специалисты помогут вам подобрать велосипед именно для Вас, а также проконсультируют и ответят на все вопросы, например, по уходу и хранению. У нас в магазине можно найти аксессуарам и многое другое для Ваших железных коней.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/OpenSansBold.woff2" as="font">
@@ -50,20 +52,19 @@
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
       <article class="select">
-        <h3 class="visually-hidden">Подобрать велосипед мечты</h3>
+        <h2 class="visually-hidden">Подобрать велосипед мечты</h2>
         <form class="select__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="select__group">
             <legend class="visually-hidden">Данные для подбора</legend>
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <!-- ??? Не знаю - оставить в виде списка или убрать его -->
             <ul class="select__list">
               <li class="select__item">
-                <label for="name"></label>
+                <label class="visually-hidden" for="name">Имя:</label>
                 <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
               </li>
               <li class="select__item">
-                <label for="tel"></label>
-                <input type="tel" name="tel" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
+                <label class="visually-hidden" for="tel">Телефон:</label>
+                <input type="tel" name="phone" id="tel" pattern="[0-9]{11}" placeholder="Введите Ваш номер телефона" required="">
               </li>
             </ul>
           </fieldset>
@@ -85,49 +86,52 @@
     </section>
 
     <section id="bicycles" class="bicycles-types theme-light">
-      <h2>Виды велосипедов</h2>
-      <ul class="bicycles-types__list">
-        <li class="bicycles-types__item bicycles-types__item--1">
-          <figure>
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@1x.png 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@1x.png 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@2x.png 2x">
-              <img src="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@1x.png" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
-            </picture>
-            <figcaption>Дорожный велосипед</figcaption>
-          </figure>
-        </li>
-        <li class="bicycles-types__item bicycles-types__item--2">
-          <figure>
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@1x.png 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@1x.png 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@2x.png 2x">
-              <img src="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@1x.png" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@2x.png 2x" width="342" height="566" alt="Горный велосипед">
-            </picture>
-            <figcaption>Горный велосипед</figcaption>
-          </figure>
-        </li>
-        <li class="bicycles-types__item bicycles-types__item--3">
-          <figure>
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-mobile@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-tablet@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-mobile@1x.png 1x, img/roger-goh-GrA9fiAm434-unsplash-1-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-tablet@1x.png 1x, img/roger-goh-GrA9fiAm434-unsplash-1-tablet@2x.png 2x">
-              <img src="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@1x.png" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@2x.png 2x" width="342" height="513" alt="Детский велосипед">
-            </picture>
-            <figcaption>Детский велосипед</figcaption>
-          </figure>
-        </li>
-      </ul>
+      <div class="bicycles-types__wrapper">
+        <h2>Виды велосипедов</h2>
+        <ul class="bicycles-types__list">
+          <li class="bicycles-types__item bicycles-types__item--1">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@1x.webp 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@1x.png 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-2-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@1x.png 1x, img/andreas-haimerl-_cv8iKu2ONM-unsplash-3-tablet@2x.png 2x">
+                <img src="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@1x.png" srcset="img/andreas-haimerl-_cv8iKu2ONM-unsplash-1-desktop@2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
+              </picture>
+              <figcaption>Дорожный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="bicycles-types__item bicycles-types__item--2">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@1x.webp 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@1x.png 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@1x.png 1x, img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-tablet@2x.png 2x">
+                <img src="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@1x.png" srcset="img/eberhard-grossgasteiger-8lDkmXnKo7s-unsplash-1-desktop@2x.png 2x" width="342" height="566" alt="Горный велосипед">
+              </picture>
+              <figcaption>Горный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="bicycles-types__item bicycles-types__item--3">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-mobile@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-tablet@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@1x.webp 1x, img/roger-goh-GrA9fiAm434-unsplash-1-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-mobile@1x.png 1x, img/roger-goh-GrA9fiAm434-unsplash-1-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-tablet@1x.png 1x, img/roger-goh-GrA9fiAm434-unsplash-1-tablet@2x.png 2x">
+                <img src="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@1x.png" srcset="img/roger-goh-GrA9fiAm434-unsplash-1-desktop@2x.png 2x" width="342" height="513" alt="Детский велосипед">
+              </picture>
+              <figcaption>Детский велосипед</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
     </section>
+
     <section class="video theme-dark" id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>

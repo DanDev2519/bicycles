@@ -1,5 +1,5 @@
 .bicycles-types {
-  padding: 152px 4% 150px;
+  padding: 152px 0 150px;
 
   background-color: $fog;
 
@@ -11,6 +11,11 @@
     letter-spacing: -0.005em;
     text-align: center;
   }
+}
+
+.bicycles-types__wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 .bicycles-types__list {
@@ -120,6 +125,10 @@
     }
   }
 
+  .bicycles-types__wrapper {
+    max-width: 590px;
+  }
+
   .bicycles-types__list {
     margin: 0 -25px;
   }
@@ -167,6 +176,10 @@
 @media #{$mobile-only} {
   .bicycles-types {
     padding: 50px 7% 40px;
+  }
+
+  .bicycles-types__wrapper {
+    max-width: 290px;
   }
 
   .bicycles-types__item {
