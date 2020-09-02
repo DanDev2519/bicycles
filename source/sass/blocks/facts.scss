@@ -47,7 +47,7 @@
 
 @media #{$tablet-only} {
   .facts {
-    padding: 30px 13% 90px;
+    padding: 30px 13%;
 
     h2 {
       margin: 0;
@@ -74,7 +74,7 @@
 
 @media #{$mobile-only} {
   .facts {
-    padding: 30px 4.69% 90px;
+    padding: 30px 4.69% 44px;
   }
 
   .facts__list {
