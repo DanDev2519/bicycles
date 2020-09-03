@@ -3,13 +3,13 @@
 
   @include bgimg(
     $black1,
-    url("../img/Img-Bike-desktop@2x.jpg"),
+    url("../img/Img-Bike-desktop@2x.png"),
     $position: center 0
   );
   background-size: cover;
 
   @media #{$retina} {
-    background-image: url("../img/Img-Bike-desktop@2x.jpg");
+    background-image: url("../img/Img-Bike-desktop@2x.png");
   }
 }
 
