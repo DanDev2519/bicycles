@@ -1,5 +1,6 @@
 .page-footer {
   padding: 152px 0 0 0;
+  overflow: hidden;
 
   h2 {
     margin: 0 auto;
@@ -33,6 +34,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  // overflow: hidden;
 }
 
 .page-footer__link {

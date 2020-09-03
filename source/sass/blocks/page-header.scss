@@ -1,5 +1,6 @@
 .page-header {
   min-height: 825px;
+  overflow: hidden;
 
   @include bgimg(
     $black1,
